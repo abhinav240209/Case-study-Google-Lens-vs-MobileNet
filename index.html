@@ -1,0 +1,205 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Google Lens vs MobileNet</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <div class="body-header">
+         <h1 style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:red; font-size:small !important;">Case Study: Google Lens or Mobilenet?</h1>
+     </div>
+
+     <span class="google lens">GOOGLE LENS<img src="google-lens4627.jpg" style="width:100px; height:100px;  color:red;"></span>
+    <p>VS</p>
+    <button type="button" class="btn btn-primary">MOBILENET</button>
+    <ol>
+        <div class="test_image_and_result col-xs-12">
+            <div class="col-sm-4 col-xs-4">
+                <b style="color:white; font-weight:bold;">Test Image -</b><br>
+                <img src="water_bottle.jpg" class="image-responsive" style="width:100px; height:100px; border-radius:25px;">
+            </div>
+            <span>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">Output on <b>GOOGLE LENS</b>-<span id="google_lens_result">Water Bottle</span></h5>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">MobileNet Model -<span id="mobileNet_result">Water Bottle</span></h5>
+            <div class="mini_result col-xs-12" style="color:white; font-size:bold;">
+                <h4>Result - </h4>
+                <hr>
+                <h4 id="myMiniResult">Both are accurate</h4>
+            </div>
+            </span>
+        </div>
+        <br>
+    </ol>
+    <ol>
+        <div class="test_image_and_result col-xs-12">
+            <div class="col-sm-4 col-xs-4">
+                <b style="color:white; font-weight:bold;">Test Image -</b><br>
+                <img src="https://cfcdn20.candere.com/media/catalog/product/cache/1/image/1020x1020/9df78eab33525d08d6e5fb8d27136e95/c/0/c005493_1.jpg?v=1536153707" class="image-responsive" style="width:100px; height:100px; border-radius:25px;">
+            </div>
+            <span>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">Output on <b>GOOGLE LENS</b>-<span id="google_lens_result">Ring</span></h5>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">MobileNet Model -<span id="mobileNet_result">Punching bag</span></h5>
+            <div class="mini_result col-xs-12" style="color:white; font-size:bold;">
+                <h4>Result - </h4>
+                <hr>
+                <h4 id="myMiniResult">Google Lens is more accurate</h4>
+            </div>
+            </span>
+        </div>
+        <br>
+    </ol>
+    <ol>
+        <div class="test_image_and_result col-xs-12">
+            <div class="col-sm-4 col-xs-4">
+                <b style="color:white; font-weight:bold;">Test Image -</b><br>
+                <img src="https://static.toiimg.com/photo/87171221.cms" class="image-responsive" style="width:100px; height:100px; border-radius:25px;">
+            </div>
+            <span>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">Output on <b>GOOGLE LENS</b>-<span id="google_lens_result">Samsung Galaxy 12</span></h5>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">MobileNet Model -<span id="mobileNet_result">cellphone</span></h5>
+            <div class="mini_result col-xs-12" style="color:white; font-size:bold;">
+                <h4>Result - </h4>
+                <hr>
+                <h4 id="myMiniResult">Google Lens is more accurate</h4>
+            </div>
+            </span>
+        </div>
+        <br>
+    </ol>
+    <ol>
+        <div class="test_image_and_result col-xs-12">
+            <div class="col-sm-4 col-xs-4">
+                <b style="color:white; font-weight:bold;">Test Image -</b><br>
+                <img src="https://m.media-amazon.com/images/I/71LZSEAdlML._AC_UL320_.jpg" class="image-responsive" style="width:100px; height:100px; border-radius:25px;">
+            </div>
+            <span>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">Output on <b>GOOGLE LENS</b>-<span id="google_lens_result">T-shirt</span></h5>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">MobileNet Model -<span id="mobileNet_result">chain armour</span></h5>
+            <div class="mini_result col-xs-12" style="color:white; font-size:bold;">
+                <h4>Result - </h4>
+                <hr>
+                <h4 id="myMiniResult">Google Lens is more accurate</h4>
+            </div>
+            </span>
+        </div>
+        <br>
+    </ol>
+    <ol>
+        <div class="test_image_and_result col-xs-12">
+            <div class="col-sm-4 col-xs-4">
+                <b style="color:white; font-weight:bold;">Test Image -</b><br>
+                <img src="https://www.bigbasket.com/media/uploads/p/xxl/1206737-2_1-cinthol-original-bath-soap-999-germ-protection.jpg" class="image-responsive" style="width:100px; height:100px; border-radius:25px;">
+            </div>
+            <span>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">Output on <b>GOOGLE LENS</b>-<span id="google_lens_result">Cinthol soap</span></h5>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">MobileNet Model -<span id="mobileNet_result">Pay Station</span></h5>
+            <div class="mini_result col-xs-12" style="color:white; font-size:bold;">
+                <h4>Result - </h4>
+                <hr>
+                <h4 id="myMiniResult">Google Lens is more accurate!</h4>
+            </div>
+            </span>
+        </div>
+        <br>
+    </ol>
+    <ol>
+        <div class="test_image_and_result col-xs-12">
+            <div class="col-sm-4 col-xs-4">
+                <b style="color:white; font-weight:bold;">Test Image -</b><br>
+                <img src="https://static.connect2india.com/c2icd/product_resources/images/power-switchboard.jpg" class="image-responsive" style="width:100px; height:100px; border-radius:25px;">
+            </div>
+            <span>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">Output on <b>GOOGLE LENS</b>-<span id="google_lens_result">switchboard</span></h5>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">MobileNet Model -<span id="mobileNet_result">lamp shade</span></h5>
+            <div class="mini_result col-xs-12" style="color:white; font-size:bold;">
+                <h4>Result - </h4>
+                <hr>
+                <h4 id="myMiniResult">Google Lens</h4>
+            </div>
+            </span>
+        </div>
+        <br>
+    </ol>
+    <ol>
+        <div class="test_image_and_result col-xs-12">
+            <div class="col-sm-4 col-xs-4">
+                <b style="color:white; font-weight:bold;">Test Image -</b><br>
+                <img src="https://www.reliancedigital.in/medias/JBL-Free-WFH-Headphones-and-Headsets-492338532-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzOTQ4MHxpbWFnZS9qcGVnfGltYWdlcy9oODkvaGY5Lzk1NzY3NDE0Mzc0NzAuanBnfDZjNjAzMDk4ZTY5NWE5OTU0OWFhZTdiZTQ3OGY3MjBjNWRiZGQxNDlmNzdkODYzOTcwODEwZjY4NGRiNTk5MTk" class="image-responsive" style="width:100px; height:100px; border-radius:25px;">
+            </div>
+            <span>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">Output on <b>GOOGLE LENS</b>-<span id="google_lens_result">headset</span></h5>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">MobileNet Model -<span id="mobileNet_result">microphone</span></h5>
+            <div class="mini_result col-xs-12" style="color:white; font-size:bold;">
+                <h4>Result - </h4>
+                <hr>
+                <h4 id="myMiniResult">Google Lens is more accurate</h4>
+            </div>
+            </span>
+        </div>
+        <br>
+    </ol>
+    <ol>
+        <div class="test_image_and_result col-xs-12">
+            <div class="col-sm-4 col-xs-4">
+                <b style="color:white; font-weight:bold;">Test Image -</b><br>
+                <img src="https://m.media-amazon.com/images/I/418E0x+al5L._SX385_.jpg" class="image-responsive" style="width:100px; height:100px; border-radius:25px;">
+            </div>
+            <span>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">Output on <b>GOOGLE LENS</b>-<span id="google_lens_result">Tape dispenser</span></h5>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">MobileNet Model -<span id="mobileNet_result">combination lock</span></h5>
+            <div class="mini_result col-xs-12" style="color:white; font-size:bold;">
+                <h4>Result - </h4>
+                <hr>
+                <h4 id="myMiniResult">Google Lens is more accurate</h4>
+            </div>
+            </span>
+        </div>
+        <br>
+    </ol>
+    <ol>
+        <div class="test_image_and_result col-xs-12">
+            <div class="col-sm-4 col-xs-4">
+                <b style="color:white; font-weight:bold;">Test Image -</b><br>
+                <img src="https://www.kokuyocamlin.com/uploads/product_img/133_0_Artistagraphi-10.png" class="image-responsive" style="width:150px; height:100px; border-radius:25px;">
+            </div>
+            <span>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">Output on <b>GOOGLE LENS</b>-<span id="google_lens_result">camlin pencil box</span></h5>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">MobileNet Model -<span id="mobileNet_result">pencil box</span></h5>
+            <div class="mini_result col-xs-12" style="color:white; font-size:bold;">
+                <h4>Result - </h4>
+                <hr>
+                <h4 id="myMiniResult">Both are accurate</h4>
+            </div>
+            </span>
+        </div>
+        <br>
+    </ol>
+    <ol>
+        <div class="test_image_and_result col-xs-12">
+            <div class="col-sm-4 col-xs-4">
+                <b style="color:white; font-weight:bold;">Test Image -</b><br>
+                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/rfb-ipad-pro10in-silver-wifi-2017?wid=1144&hei=1144&fmt=jpeg&qlt=80&.v=1582330381848" class="image-responsive" style="width:100px; height:100px; border-radius:25px;">
+            </div>
+            <span>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">Output on <b>GOOGLE LENS</b>-<span id="google_lens_result">Ipad</span></h5>
+            <h5 class="col-sm-4 col-xs-12" style="color:white; font-size:bold;">MobileNet Model -<span id="mobileNet_result">Ipad</span></h5>
+            <div class="mini_result col-xs-12" style="color:white; font-size:bold;">
+                <h4>Result - </h4>
+                <hr>
+                <h4 id="myMiniResult">Both are accurate</h4>
+            </div>
+            </span>
+        </div>
+        <br>
+    </ol>
+
+    <div class="main_result" style="background-color:rgb(197, 165, 228); color:crimson; border-color:red; border-style:solid; border-radius:25px;">I have done ,my Case study with 10 images. Google Lens has identified all of them correctly. 
+        <br>But MobileNet was only able to identify 3 of them.
+         <br>Therefore Google Lens is more accurate.</div>
+    
+  
+    </body>
+ </html>
